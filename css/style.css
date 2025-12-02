@@ -1,0 +1,374 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0 auto;
+  padding: 0 auto;
+  overflow-x: hidden;
+}
+body{
+  width: 1440px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+
+
+}
+a{
+  text-decoration: none;
+    color: inherit;
+    text-decoration-color: #86FF29; 
+}
+img{
+  min-width: 100%;
+}
+header{
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Roboto", sans-serif;
+  height: 100px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 32px;
+  color: #4B1E04;
+  background-color: #fff;
+  
+}
+.logo{
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+.logo_t{
+  margin-top: 34px;
+}
+ul{
+  display: flex;
+  gap: 50px;
+  list-style: none;
+  margin-top: 34px;
+}
+.main_btn{
+  text-decoration: underline;
+  text-decoration-color: #86FF29;     /* цвет линии */
+  text-decoration-thickness: 5px;     /* толщина  */
+  text-underline-offset: 4px;         /* отступ от текста  */
+  transition: all 0.3s ease;
+}
+.main_btn:hover{
+  color: #86FF29;
+  transform: scale(1.03);
+    text-shadow:
+    -1px -1px 0 #4B1E04,
+    1px -1px 0 #4B1E04,
+    -1px 1px 0 #4B1E04,
+    1px 1px 0 #4B1E04;
+}
+.btn{
+  transition: all 0.3s ease;
+}
+.btn:hover{
+  color: #86FF29;
+  transform: scale(1.03);
+    text-shadow:
+    -1px -1px 0 #4B1E04,
+    1px -1px 0 #4B1E04,
+    -1px 1px 0 #4B1E04,
+    1px 1px 0 #4B1E04;
+}
+/*------------------------*/
+.salesale{
+  position: fixed;
+top: 700px;
+left: 1400px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+main{
+    font-family: "Roboto", sans-serif;
+  font-weight: 500;
+    font-size: 32px;
+  color: #4B1E04;
+}
+
+.main_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1440px;
+  height: 804px;
+  background-image: url(../img/Coffe.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+.blok_info{
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 546px;
+  height: 500px;
+}
+.info_coffee{
+  border-radius: 30px;
+  padding-top: 30px ;
+  padding-left: 25px;
+  text-align: start;
+font-size: 24px;
+  width: 100%;
+  height: 180px;
+  background-color: rgba(255, 255, 255, 0.83);
+}
+.y_nas{
+  width: 100%;
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0.83);
+  font-size: 24px;
+  height: 130px;
+  padding: 25px;
+  padding-bottom: 10px;
+  padding-top: 20px;  
+  border-radius: 30px;
+}
+.posmotret_menu{
+  display: flex;
+  border-radius: 37px;
+  justify-content: center;
+  align-items: center;
+  width: 358px;
+  height: 81px;
+  background-color: rgba(134, 255, 41, 0.61);
+    font-weight: 800;
+}
+.text{
+  transition: all 0.3s ease;
+}
+.text:hover{
+  transform: scale(1.05);
+}
+/*------НЕ ЗНАЛ КАК СДЕЛАТЬ СКРОЛЛ, ВЗЯЛ В ИНЕТЕ------*/
+.scroll-container {
+  margin-top: 100px;
+  display: flex;
+  gap: 16px;               /* отступ между элементами */
+  overflow-x: auto;        /* появится горизонтальный скролл */
+  padding: 16px 0;
+  scroll-behavior: smooth; /* плавная прокрутка (опционально) */
+
+  /* Скрываем стрелки скролла (не во всех браузерах) */
+  -ms-overflow-style: none;        /* для IE и Edge */
+  scrollbar-width: none;           /* для Firefox */
+}
+
+/* Скрываем полосу прокрутки в Chrome, Safari */
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-item {
+  flex-wrap: wrap;
+  flex: 0 0 auto;          /* запрещаем сжиматься и растягиваться */
+  width: 358px;            /* фиксированная ширина */
+  height: 480px;
+  background: #845C28;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 60px;
+}
+.img_coffee{
+  border-radius: 40px;
+  width: 288px;
+  margin-top: 30px;
+  height: 370px;
+  display: flex;
+  justify-content: center; /* центр по горизонтали */
+  align-items: center;     /* центр по вертикали */
+  overflow: hidden;        /* на всякий случай, если что-то вылезет */
+}
+.img_coffee img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* ← КЛЮЧЕВОЕ СВОЙСТВО */
+  object-position: center; /* центрирует картинку внутри */
+}
+.coffee_text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+
+/*------------------*/
+.contact-block {
+  display: flex;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  gap: 20px;
+  background-color: #845C28; /* коричневый фон */
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  height: 529px;
+}
+
+/* Левая часть — текст и кофе */
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  max-width: 300px;
+}
+
+.contact-text h3 {
+  margin: 32px;
+  font-size: 24px;
+  font-weight: 500;
+
+}
+
+.btn1 {
+  display: inline-block;
+  background-color: #86FF29; /* ярко-зелёный */
+  color: #4B1E04;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #75E823;
+  transform: scale(1.05);
+}
+
+.coffee-img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Правая часть — карта */
+.map-container {
+  margin: 32px;
+  flex: 1;
+  height: 465px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  border: none;
+  border-radius: 12px;
+}
+/*-----------*/
+
+.footer {
+  background-color: #845C28;
+  color: #4B1E04;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Левая часть — логотип и копирайт */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 200px;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3); /* блок с прозрачностью 30% */
+  border-radius: 12px;
+}
+
+.logo-img {
+  padding-left: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.copyright {
+  color: rgba(75, 30, 4, 0.61); /* текст слева — 61% прозрачности */
+  margin: 0;
+  font-size: 14px;
+}
+.footer-right{
+      background-color: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  width: 500px;
+  height: 126px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.footer-right h1,h2{
+  margin-left: 5px;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-right h2{
+  width: 180px;
+  opacity: 61%;
+}
+.right-main{
+  margin-left: 15px;
+}
+.right-main h1{
+  transition: all 0.3s ease;
+}
+.right-main h1:hover{
+  color: #86FF29;
+  transform: scale(1.03);
+    text-shadow:
+    -1px -1px 0 #4B1E04,
+    1px -1px 0 #4B1E04,
+    -1px 1px 0 #4B1E04,
+    1px 1px 0 #4B1E04;
+}
+.right-right h1{
+  margin-left: 5px;
+  transition: all 0.3s ease;
+}
+.right-right h1:hover{
+  color: #86FF29;
+  transform: scale(1.01);
+    text-shadow:
+    -1px -1px 0 #4B1E04,
+    1px -1px 0 #4B1E04,
+    -1px 1px 0 #4B1E04,
+    1px 1px 0 #4B1E04;
+}
